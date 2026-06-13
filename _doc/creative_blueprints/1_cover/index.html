@@ -1,39 +1,34 @@
 <style>
-  .mode-landscape .sl-cover-layout { display: flex; flex-direction: row; align-items: stretch; min-height: 100%; }
-  .mode-landscape .sl-content-panel { width: 55%; display: flex; flex-direction: column; justify-content: center; }
-  .mode-landscape .sl-image-panel { width: 45%; min-height: 0; }
-  .mode-portrait .sl-cover-layout { display: flex; flex-direction: column; min-height: 100%; }
-  .mode-portrait .sl-content-panel { flex: 1; display: flex; flex-direction: column; justify-content: center; padding-bottom: 1.5rem; }
-  .mode-portrait .sl-image-panel { min-height: 280px; flex-shrink: 0; }
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-left { width: 52%; }
+.mode-portrait .sl-left { width: 100%; }
+.mode-landscape .sl-right { display: flex; }
+.mode-portrait .sl-right { display: none; }
 </style>
 <section class="w-full h-full overflow-auto bg-white">
-  <div class="sl-cover-layout h-full">
-    <div class="sl-content-panel px-10 py-12">
-      <div class="flex flex-col justify-between h-full">
-        <div>
-          <p class="text-sm font-medium tracking-widest uppercase mb-6" style="color:#4F46E5;">Parent &amp; Guardian</p>
-          <h1 class="text-5xl font-bold text-slate-900 leading-tight mb-6">School Morning Made Simple</h1>
-          <p class="text-xl text-slate-600 leading-relaxed max-w-md mb-6">Guided wake-up and ready-for-school routines that help children stay on track and parents stay calm.</p>
-          <div class="inline-flex items-center gap-3 border rounded-lg px-4 py-3" style="background-color:#10B981; border-color:#4F46E540;">
-            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#4F46E5;">
-              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-              </svg>
-            </div>
-            <span class="text-sm font-medium px-1" style="color:#ffffff;">Core vision: Simplified productivity</span>
+  <div class="sl-layout flex h-full">
 
-          </div>
-        </div>
-        <div class="mt-auto pt-8">
-          <data-attribution />
-        </div>
+    <!-- Left: editorial column -->
+    <div class="sl-left flex flex-col justify-between p-12">
+      <div>
+        <span class="inline-block text-xs font-bold tracking-widest uppercase text-amber-700 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full mb-8">Smart Morning Routine</span>
+        <h1 class="font-black leading-none text-slate-900 mb-4" style="font-size:3.6rem">Rise &amp;<br><span class="text-amber-700">Ready</span></h1>
+        <p class="text-xl font-semibold text-slate-600 mb-5 leading-snug">Your child's morning,<br>on autopilot.</p>
+        <p class="text-sm text-slate-500 leading-relaxed" style="max-width:22rem">A smart alarm and guided tap-through checklist that wakes school children and walks them through every step — independently, every school day.</p>
       </div>
+      <data-attribution />
     </div>
-    <div class="sl-image-panel relative overflow-hidden">
-      <div class="absolute inset-0" style="background:linear-gradient(135deg, #4F46E5, #4F46E520);"></div>
-      <div class="absolute inset-0 flex items-center justify-center p-8">
-        <img src="http://localhost:8001/common/image-generation?prompt=happy+child+waking+up+in+morning+sunlight+ready+for+school&amp;keyspace=sa909o3x&amp;user_id=4690" alt="cover" class="max-w-full max-h-full object-contain drop-shadow-2xl rounded-2xl" />
-      </div>
+
+    <!-- Right: full-bleed visual -->
+    <div class="sl-right flex-1 overflow-hidden relative bg-amber-50">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=happy+school+child+getting+ready+for+school+backpack+bright+sunny+bedroom+sunrise+morning+routine+warm+cheerful+orange+tones+illustration"
+        class="w-full h-full object-cover"
+        alt="Rise & Ready — morning routine"
+      />
+      <div class="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent"></div>
     </div>
+
   </div>
 </section>
