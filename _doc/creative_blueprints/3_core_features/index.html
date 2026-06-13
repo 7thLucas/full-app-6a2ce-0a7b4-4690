@@ -1,0 +1,61 @@
+<style>
+.mode-landscape .sl-grid { grid-template-columns: repeat(2, 1fr); }
+.mode-portrait .sl-grid { grid-template-columns: 1fr; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10">
+
+    <!-- Header + persona chips -->
+    <div class="flex items-center justify-between mb-6">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">What it does</p>
+        <h2 class="text-3xl font-black text-slate-900">Core Features</h2>
+      </div>
+      <div class="flex gap-2">
+        <span class="bg-amber-700 text-white text-xs font-bold px-4 py-1.5 rounded-full">Parent</span>
+        <span class="bg-slate-100 text-slate-500 text-xs font-semibold px-4 py-1.5 rounded-full">Child</span>
+      </div>
+    </div>
+
+    <!-- Feature cards grid -->
+    <div class="sl-grid grid gap-4 flex-1">
+
+      <!-- Card 1: Alarm Setup -->
+      <div class="bg-amber-50 rounded-2xl p-6 flex flex-col gap-3">
+        <div class="w-9 h-9 rounded-xl bg-amber-600 flex items-center justify-center text-white text-base">⏰</div>
+        <div>
+          <p class="font-bold text-slate-900 text-sm mb-1">Alarm Setup</p>
+          <p class="text-xs text-slate-500 leading-relaxed">Configure wake-up time and a kid-friendly sound. School-day schedule awareness means it fires only on school mornings — skip weekends or custom days off automatically.</p>
+        </div>
+      </div>
+
+      <!-- Card 2: Routine Builder -->
+      <div class="bg-sky-50 rounded-2xl p-6 flex flex-col gap-3">
+        <div class="w-9 h-9 rounded-xl bg-sky-600 flex items-center justify-center text-white text-base">📋</div>
+        <div>
+          <p class="font-bold text-slate-900 text-sm mb-1">Routine Builder</p>
+          <p class="text-xs text-slate-500 leading-relaxed">Add, name, and order every morning step — get dressed, brush teeth, eat breakfast, pack bag. Set duration hints so the child knows how long each task should take.</p>
+        </div>
+      </div>
+
+      <!-- Card 3: Completion Rewards -->
+      <div class="bg-slate-50 rounded-2xl p-6 flex flex-col gap-3">
+        <div class="w-9 h-9 rounded-xl bg-slate-700 flex items-center justify-center text-white text-base">⭐</div>
+        <div>
+          <p class="font-bold text-slate-900 text-sm mb-1">Completion Rewards</p>
+          <p class="text-xs text-slate-500 leading-relaxed">Children earn stars and encouraging animations as they tick off each step — positive reinforcement only, no failure states, no scolding. Keeps kids motivated without pressure.</p>
+        </div>
+      </div>
+
+      <!-- Card 4: Parent Dashboard -->
+      <div class="bg-amber-700 rounded-2xl p-6 flex flex-col gap-3">
+        <div class="w-9 h-9 rounded-xl bg-white rounded-xl flex items-center justify-center text-amber-700 text-base font-bold">📊</div>
+        <div>
+          <p class="font-bold text-white text-sm mb-1">Parent Dashboard</p>
+          <p class="text-xs text-amber-200 leading-relaxed">See at a glance whether today's routine was completed and review the last 7 days of history — no nagging, no reminders, no guessing whether they're ready.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
