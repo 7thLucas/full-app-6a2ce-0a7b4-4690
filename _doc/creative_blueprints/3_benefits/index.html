@@ -1,37 +1,81 @@
 <style>
-  .mode-landscape .sl-metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
-  .mode-portrait .sl-metrics-grid { display: flex; flex-direction: column; gap: 1rem; }
+.mode-landscape .sl-steps { flex-direction: row; }
+.mode-portrait .sl-steps { flex-direction: column; }
+.mode-landscape .sl-step-connector { width: 2rem; height: 2px; align-self: flex-start; margin-top: 1.4rem; flex-shrink: 0; }
+.mode-portrait .sl-step-connector { width: 2px; height: 1.5rem; align-self: center; }
 </style>
-<section class="w-full h-full overflow-auto bg-white p-10">
-  <div class="flex items-center gap-3 mb-2">
-    <span class="text-xs font-bold tracking-widest uppercase" style="color:#4F46E5;">Outcomes</span>
-  </div>
-  <h2 class="text-4xl font-bold text-slate-900 mb-6">Quantifiable Benefits</h2>
-  <p class="text-lg text-slate-600 mb-10 max-w-3xl">Transform chaotic mornings into calm, productive routines with guided wake-up and step-by-step checklists that empower children to get ready independently.</p>
-  <div class="sl-metrics-grid mb-12"><article class="flex-1 min-w-[200px] bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-        <h3 class="text-3xl font-bold leading-none mb-2" style="color:#4F46E5;">45%</h3>
-        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-2">Less Parental Stress</h4>
-        <p class="text-slate-600 text-sm leading-relaxed">Parents report significantly reduced morning anxiety and fewer reminders needed</p>
-      </article>
-      <article class="flex-1 min-w-[200px] bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-        <h3 class="text-3xl font-bold leading-none mb-2" style="color:#4F46E5;">30 mins</h3>
-        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-2">Faster Mornings</h4>
-        <p class="text-slate-600 text-sm leading-relaxed">Average time savings through optimized task sequencing and child engagement</p>
-      </article>
-      <article class="flex-1 min-w-[200px] bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-        <h3 class="text-3xl font-bold leading-none mb-2" style="color:#4F46E5;">92%</h3>
-        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-2">On-Time Arrivals</h4>
-        <p class="text-slate-600 text-sm leading-relaxed">Children reach school prepared and punctual with improved attendance rates</p>
-      </article></div>
-  <div class="rounded-2xl p-8" style="background-color:#10B981;">
-    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
-      <div class="flex-1">
-        <h3 class="text-sm font-bold uppercase tracking-widest text-white/70 mb-2">Primary ROI</h3>
-        <p class="text-4xl font-black text-white">Priceless Peace of Mind</p>
-      </div>
-      <div class="flex-[2] text-white/90 text-xl leading-relaxed font-medium border-l-0 md:border-l border-white/20 md:pl-8">
-        Start each day calm, organized, and connected as a family
-      </div>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10">
+
+    <!-- Header -->
+    <div class="mb-7">
+      <span class="inline-block text-xs font-bold tracking-widest uppercase text-amber-700 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full mb-3">Every School Morning</span>
+      <h2 class="text-3xl font-black text-slate-900">The Routine, Step by Step</h2>
+      <p class="text-sm text-slate-500 mt-1">From alarm to front door — Morning Buddy guides every step independently.</p>
     </div>
+
+    <!-- Steps row -->
+    <div class="sl-steps flex flex-1 items-start gap-0">
+
+      <!-- Step 1: Alarm -->
+      <div class="flex-1 flex flex-col items-center text-center px-2">
+        <div class="w-14 h-14 rounded-2xl bg-amber-600 flex items-center justify-center text-white text-2xl mb-3 shadow-md">⏰</div>
+        <p class="text-xs font-bold uppercase tracking-wider text-amber-700 mb-1">Wake Up</p>
+        <p class="text-xs text-slate-500 leading-relaxed">Full-screen alarm fires at the set time. Child taps "I'm Awake!" to dismiss.</p>
+      </div>
+
+      <div class="sl-step-connector bg-amber-200"></div>
+
+      <!-- Step 2: Bath -->
+      <div class="flex-1 flex flex-col items-center text-center px-2">
+        <div class="w-14 h-14 rounded-2xl bg-sky-500 flex items-center justify-center text-white text-2xl mb-3 shadow-md">🚿</div>
+        <p class="text-xs font-bold uppercase tracking-wider text-sky-700 mb-1">Wash Up</p>
+        <p class="text-xs text-slate-500 leading-relaxed">Bath or wash up — first step in the guided checklist, large text and emoji.</p>
+      </div>
+
+      <div class="sl-step-connector bg-amber-200"></div>
+
+      <!-- Step 3: Dress -->
+      <div class="flex-1 flex flex-col items-center text-center px-2">
+        <div class="w-14 h-14 rounded-2xl bg-amber-400 flex items-center justify-center text-white text-2xl mb-3 shadow-md">👕</div>
+        <p class="text-xs font-bold uppercase tracking-wider text-amber-700 mb-1">Get Dressed</p>
+        <p class="text-xs text-slate-500 leading-relaxed">Uniform on. Star trail progress bar fills as each step is completed.</p>
+      </div>
+
+      <div class="sl-step-connector bg-amber-200"></div>
+
+      <!-- Step 4: Breakfast -->
+      <div class="flex-1 flex flex-col items-center text-center px-2">
+        <div class="w-14 h-14 rounded-2xl bg-green-500 flex items-center justify-center text-white text-2xl mb-3 shadow-md">🍳</div>
+        <p class="text-xs font-bold uppercase tracking-wider text-green-700 mb-1">Breakfast</p>
+        <p class="text-xs text-slate-500 leading-relaxed">Eat breakfast — timed step with a friendly duration hint shown on screen.</p>
+      </div>
+
+      <div class="sl-step-connector bg-amber-200"></div>
+
+      <!-- Step 5: Study -->
+      <div class="flex-1 flex flex-col items-center text-center px-2">
+        <div class="w-14 h-14 rounded-2xl bg-slate-600 flex items-center justify-center text-white text-2xl mb-3 shadow-md">📚</div>
+        <p class="text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Study Check</p>
+        <p class="text-xs text-slate-500 leading-relaxed">Quick homework or bag review before heading out — no last-minute panic.</p>
+      </div>
+
+      <div class="sl-step-connector bg-amber-200"></div>
+
+      <!-- Step 6: Done -->
+      <div class="flex-1 flex flex-col items-center text-center px-2">
+        <div class="w-14 h-14 rounded-2xl bg-amber-700 flex items-center justify-center text-white text-2xl mb-3 shadow-md">🎉</div>
+        <p class="text-xs font-bold uppercase tracking-wider text-amber-700 mb-1">All Done!</p>
+        <p class="text-xs text-slate-500 leading-relaxed">Confetti celebration fires. Child is out the door — on time, every time.</p>
+      </div>
+
+    </div>
+
+    <!-- Footer callout -->
+    <div class="mt-6 bg-amber-700 rounded-2xl p-4 flex items-center justify-between">
+      <p class="text-sm font-black text-white">Every step is customisable by the parent.</p>
+      <p class="text-xs text-amber-200 leading-relaxed" style="max-width:18rem">Add, remove, reorder, or rename any step — change the emoji, title, and duration hint from the parent setup screen.</p>
+    </div>
+
   </div>
 </section>
