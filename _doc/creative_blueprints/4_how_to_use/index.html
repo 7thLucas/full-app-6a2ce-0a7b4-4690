@@ -1,43 +1,57 @@
 <style>
-  .mode-landscape .sl-features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
-  .mode-portrait .sl-features-grid { display: flex; flex-direction: column; gap: 1rem; }
+.mode-landscape .sl-cards { grid-template-columns: repeat(3, 1fr); }
+.mode-portrait .sl-cards { grid-template-columns: 1fr; }
 </style>
-<section class="w-full h-full overflow-auto bg-white p-10">
-  <div class="flex items-center justify-between mb-2">
-    <p class="text-xs font-semibold tracking-widest uppercase" style="color:#4F46E5;">Core Capabilities</p>
-    <div class="flex items-center gap-1.5 px-2.5 py-1 border rounded-full" style="background-color:#4F46E5; border-color:#4F46E530;">
-      <span class="text-xs font-semibold" style="color:#ffffff;">Enabled</span>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10">
+
+    <!-- Header -->
+    <div class="mb-8">
+      <span class="inline-block text-xs font-bold tracking-widest uppercase text-amber-700 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full mb-3">Getting Started</span>
+      <h2 class="text-3xl font-black text-slate-900">Set Up Once.<br>Runs Every Morning.</h2>
+      <p class="text-sm text-slate-500 mt-2">Three steps for parents. Zero steps every morning after that.</p>
     </div>
-  </div>
-  <h1 class="text-3xl font-bold text-slate-900 mb-4 leading-tight">Effortless Product Experience</h1>
-  <p class="text-slate-600 text-lg mb-8 max-w-2xl">Intuitive features designed for seamless adoption and long-term value delivery.</p>
-  <div class="sl-features-grid">
-    <div class="bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-xl p-5 shadow-sm">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center flex-shrink-0">
-               <span class="text-xl">✨</span>
-            </div>
-            <h3 class="font-bold text-slate-900 text-base">Smart Wake-Up System</h3>
-          </div>
-          <p class="text-slate-600 text-sm leading-relaxed">Gentle, customizable alarms with progressive escalation—music, voice, or lights—that respect your child&#x27;s sleep while ensuring they wake on time.</p>
+
+    <!-- Cards -->
+    <div class="sl-cards grid gap-5 flex-1">
+
+      <!-- Step 1 -->
+      <div class="bg-amber-50 border border-amber-100 rounded-2xl p-7 flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-600 flex items-center justify-center text-white font-black text-lg flex-shrink-0">1</div>
+          <h3 class="font-bold text-slate-900 text-base">Set the Alarm</h3>
         </div>
-        <div class="bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-xl p-5 shadow-sm">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center flex-shrink-0">
-               <span class="text-xl">✨</span>
-            </div>
-            <h3 class="font-bold text-slate-900 text-base">Interactive Morning Checklist</h3>
-          </div>
-          <p class="text-slate-600 text-sm leading-relaxed">Visual, gamified task list — bath/wash up, get dressed, brush teeth, eat breakfast, study review, pack bag, shoes on — that children tap through, with encouraging messages at each step.</p>
+        <p class="text-slate-600 text-sm leading-relaxed">Open parent setup (PIN-protected), enter your child's name, pick the wake-up time, and choose which days the alarm fires — weekdays only or a custom schedule.</p>
+        <div class="mt-auto bg-white border border-amber-200 rounded-xl px-3 py-2">
+          <p class="text-xs text-amber-800 font-semibold">⏰ Full-screen alarm with "I'm Awake!" button</p>
         </div>
-        <div class="bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-xl p-5 shadow-sm">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center flex-shrink-0">
-               <span class="text-xl">✨</span>
-            </div>
-            <h3 class="font-bold text-slate-900 text-base">Parent Oversight Dashboard</h3>
-          </div>
-          <p class="text-slate-600 text-sm leading-relaxed">Real-time view of your child&#x27;s progress, instant notifications if they&#x27;re falling behind, and insights to optimize the routine tomorrow.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="bg-sky-50 border border-sky-100 rounded-2xl p-7 flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-sky-600 flex items-center justify-center text-white font-black text-lg flex-shrink-0">2</div>
+          <h3 class="font-bold text-slate-900 text-base">Build the Routine</h3>
         </div>
+        <p class="text-slate-600 text-sm leading-relaxed">Add each morning step — bath, get dressed, breakfast, study review. Set the emoji, title, and duration hint for each. Drag to reorder. Remove anything that doesn't fit your child's morning.</p>
+        <div class="mt-auto bg-white border border-sky-200 rounded-xl px-3 py-2">
+          <p class="text-xs text-sky-800 font-semibold">📋 Fully customisable — add, remove, reorder</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="bg-amber-700 rounded-2xl p-7 flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-amber-700 font-black text-lg flex-shrink-0">3</div>
+          <h3 class="font-bold text-white text-base">Hand It to Your Child</h3>
+        </div>
+        <p class="text-amber-200 text-sm leading-relaxed">That's it. Every morning the alarm fires, your child taps through each step independently, earns stars along the way, and hits the confetti screen when they're done.</p>
+        <div class="mt-auto bg-amber-600 rounded-xl px-3 py-2">
+          <p class="text-xs text-amber-100 font-semibold">🎉 Parent checks the 7-day dashboard — no nagging needed</p>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </section>
