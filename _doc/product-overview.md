@@ -31,7 +31,7 @@ A calm, structured morning companion designed for children to use independently 
 - **For children**: warm, playful, encouraging — a friendly coach cheering them on
 - **For parents**: practical, clear, trustworthy — saves time and reduces daily conflict
 - **Palette**: warm sunrise — amber/orange primary, sky-blue accent, white background
-- **Product name**: Rise & Ready
+- **Product name**: Morning Buddy
 
 ## Scope (MVP)
 Single-child setup, one configurable morning routine per day, alarm + checklist + completion reward, parent dashboard with 7-day history.
