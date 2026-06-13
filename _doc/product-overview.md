@@ -17,11 +17,12 @@ School mornings are chaotic. Parents repeat the same instructions every single d
 4. **Parent dashboard** — parents see at a glance whether today's routine was completed and how the last seven days looked.
 
 ## Core features
-- Configurable wake-up alarm (time, kid-friendly sound)
-- Customisable morning checklist (step name, order, duration hint)
-- Child-facing step-by-step UI — large text, simple tap, friendly illustrations
-- Completion tracking with encouraging in-app rewards
-- Parent setup and monitoring dashboard (7-day history)
+- Configurable wake-up alarm (time, kid-friendly sound) with full-screen "I'm Awake!" dismissal
+- Customisable morning checklist (step name, emoji, order, duration hint — add/remove/reorder)
+- Child-facing step-by-step UI — large text, big emoji, star trail progress bar, one step at a time
+- Confetti celebration screen when all steps are completed
+- Completion tracking with encouraging in-app rewards (stars, animations — positive only, no failure states)
+- Parent setup and monitoring dashboard (PIN-protected, 7-day colour-coded history grid)
 - School-day schedule awareness (weekdays only, or custom days off)
 
 ## Positioning
