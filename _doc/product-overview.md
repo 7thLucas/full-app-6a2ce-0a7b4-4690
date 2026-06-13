@@ -12,7 +12,7 @@ School mornings are chaotic. Parents repeat the same instructions every single d
 
 ## How it works
 1. **Smart alarm** — a scheduled, kid-friendly alarm fires at the configured wake-up time.
-2. **Step-by-step morning guide** — after waking, the child sees a simple checklist of morning tasks (configured by the parent), each with a friendly prompt and a tap-to-complete interaction.
+2. **Step-by-step morning guide** — after waking, the child sees a simple checklist of morning tasks (configured by the parent), each with a friendly prompt and a tap-to-complete interaction. Default steps include: bath/wash up, get dressed, brush teeth, eat breakfast, study review (quick homework/bag check), pack bag, shoes on.
 3. **Encouragement & rewards** — the child earns praise (stars, animations) as they complete each step, keeping them motivated.
 4. **Parent dashboard** — parents see at a glance whether today's routine was completed and how the last seven days looked.
 
