@@ -1,7 +1,7 @@
-# Rise & Ready — Product Overview
+# Morning Buddy — Product Overview
 
 ## What it is
-Rise & Ready is a school morning routine app that wakes up school-age children and guides them through every step needed to get out the door on time. It replaces parental nagging with a child-facing interface: a smart alarm followed by a guided tap-through checklist (get dressed, brush teeth, eat breakfast, pack bag, shoes on) that the child works through independently each morning.
+Morning Buddy is a school morning routine app that wakes up school-age children and guides them through every step needed to get out the door on time. It replaces parental nagging with a child-facing interface: a smart alarm followed by a guided tap-through checklist (get dressed, brush teeth, eat breakfast, pack bag, shoes on) that the child works through independently each morning.
 
 ## Users
 - **Primary persona — The Parent**: Sets up the alarm and customises the routine checklist once. Monitors whether the child completed all steps. Wants school mornings to run without daily intervention.
